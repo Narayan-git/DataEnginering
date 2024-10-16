@@ -11,6 +11,24 @@ Installation : open cmd installation folder
 	Command: tar xzvf C:\Users\nsahu12\Downloads\spark-3.5.3-bin-hadoop3.tgz
 
 Downlaod Winutils:
+https://kontext.tech/article/825/hadoop-331-winutils
+-> https://github.com/kontext-tech/winutils
+download zip file and take which version you want and place in same directory
 and place in smae folder the three istalled java, spark and winutils also
+
+
+
+add three user paths in environment variable
+Like Java-> JavaHome and java path till java folder
+same SparkHome and Hadoop home
+
+then edit environment variabvle you can add three variabkles
+
+Like %JavaHome%\bin
+%SparkHome%\bin
+%HadoopHome%\bin
+ save it
+
+
 
 Install Python : 
