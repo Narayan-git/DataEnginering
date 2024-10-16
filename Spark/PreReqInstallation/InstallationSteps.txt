@@ -10,4 +10,7 @@ Installation : open cmd installation folder
 
 	Command: tar xzvf C:\Users\nsahu12\Downloads\spark-3.5.3-bin-hadoop3.tgz
 
+Downlaod Winutils:
+and place in smae folder the three istalled java, spark and winutils also
+
 Install Python : 
