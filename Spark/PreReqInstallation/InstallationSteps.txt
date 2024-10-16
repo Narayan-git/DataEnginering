@@ -1,0 +1,13 @@
+Spark Installation
+
+Install JDK and do path setup check 
+	Using Download JDK
+check java version in cmd : javac -version
+
+downlaod Spark witgh hadoop 3
+	https://www.apache.org/dyn/closer.lua/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
+Installation : open cmd installation folder
+
+	Command: tar xzvf C:\Users\nsahu12\Downloads\spark-3.5.3-bin-hadoop3.tgz
+
+Install Python : 
