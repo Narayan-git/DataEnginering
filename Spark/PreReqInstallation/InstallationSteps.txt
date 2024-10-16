@@ -23,11 +23,19 @@ Like Java-> JavaHome and java path till java folder
 same SparkHome and Hadoop home
 
 then edit environment variabvle you can add three variabkles
-
+add in Path variable
 Like %JavaHome%\bin
 %SparkHome%\bin
 %HadoopHome%\bin
  save it
+
+Version Chek:
+Java --Version
+
+Spark-shell --master
+	it will open scala command line
+
+Create spark data frame
 
 
 
