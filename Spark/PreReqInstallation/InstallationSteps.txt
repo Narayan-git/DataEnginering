@@ -6,9 +6,7 @@ check java version in cmd : javac -version
 
 downlaod Spark witgh hadoop 3
 	https://www.apache.org/dyn/closer.lua/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz
-Installation : open cmd installation folder
-
-	Command: tar xzvf C:\Users\nsahu12\Downloads\spark-3.5.3-bin-hadoop3.tgz
+Installation : extract the file in specific directory of Spark
 
 Downlaod Winutils:
 https://kontext.tech/article/825/hadoop-331-winutils
@@ -32,11 +30,9 @@ Like %JavaHome%\bin
 Version Chek:
 Java --Version
 
+go to Spark placed directory using command line
+then use this command  for check spark: C:\UserInstallation\Spark\bin>spark-shell --master local[3]
 Spark-shell --master
 	it will open scala command line
 
 Create spark data frame
-
-
-
-Install Python : 
