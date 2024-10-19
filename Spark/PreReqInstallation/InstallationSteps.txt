@@ -42,17 +42,69 @@ then use this command  for check spark: C:\UserInstallation\Spark\bin>spark-shel
 	a. Path, Pyspark_Python, Pyspark_Driver_Python, PythonPath
 3. Run PySpark Shell to verify
 
-PYSARK_PYTHON : Python path \ Python.exe
+PYSPARK_PYTHON : Python path \ Python.exe
 PYSPARK_DRIVER_PYTHON : python path \ Python.exe
 PYTHONPATH : %SPARK_HOME%\python;%SPARK_HOME%\python\lib\*.zip
 
 then for validation: 
-in command line : Pyspark <-
+in command line : 
+python --version
+echo %PYSPARK_PYTHON%
+echo %PYSPARK_DRIVER_PYTHON%
+Pyspark <-
+
+
  Web link for Local host: http://BOOK-A85R0IH357:4041
 
 
 First AID program Create Data frame : 
 		n = [[1], [2], [3], [4], [5]]
 		nDF = spark.createDataFrame(n, "SLNO: int")
+
+for Result : nDF.show()
+
+
+============== Using Jupytor notebook =======================
+Steps: 
+	1. Download and install Anaconda distribution
+		link: https://www.anaconda.com/download/success
+	2. Setup conda environment
+		a. Add Python, FindSpark, Hive, Delta Lake
+		b. Add Jupyter notebooks
+		Add python version with creating new environment
+		click play button -> Open terminal
+			=> In temina use below commands
+				conda install -c conda-forge findspark
+				
+				conda install -c conda-forge pyhive delta-spark jupyter
+				
+	3. Lunch a Jupyter notebook
+		in notebook : 
+====> Basic steps in jupyter
+import findspark #for connect local spark installation
+
+findspark.init() #to initialize spark
+findspark.find()
+
+from pyspark.sql import SparkSession
+from pyspark.sql.types import *
+
+##create spark application 
+spark = (
+    SparkSession
+    .builder
+    .appName("MyFirstDEApp")
+    .master("local[4]")
+    .getOrCreate()    
+)
+lunch Application : spark
+
+
+n = [[1], [2], [3], [4], [5]]
+nDF = spark.createDataFrame(n, "SLNO: int")
+
+nDF.show()
+
+
 
 
