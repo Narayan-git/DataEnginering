@@ -32,7 +32,27 @@ Java --Version
 
 go to Spark placed directory using command line
 then use this command  for check spark: C:\UserInstallation\Spark\bin>spark-shell --master local[3]
-Spark-shell --master
-	it will open scala command line
 
-Create spark data frame
+ Web link for Local host:  http://BOOK-A85R0IH357:4040
+
+
+============================ PYTHON Installation ==========================
+1. Download Python and instal in local machine
+2. Set Environment variables
+	a. Path, Pyspark_Python, Pyspark_Driver_Python, PythonPath
+3. Run PySpark Shell to verify
+
+PYSARK_PYTHON : Python path \ Python.exe
+PYSPARK_DRIVER_PYTHON : python path \ Python.exe
+PYTHONPATH : %SPARK_HOME%\python;%SPARK_HOME%\python\lib\*.zip
+
+then for validation: 
+in command line : Pyspark <-
+ Web link for Local host: http://BOOK-A85R0IH357:4041
+
+
+First AID program Create Data frame : 
+		n = [[1], [2], [3], [4], [5]]
+		nDF = spark.createDataFrame(n, "SLNO: int")
+
+
