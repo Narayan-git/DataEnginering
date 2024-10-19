@@ -1,0 +1,32 @@
+
+--Running  Jobs with SparkSubmit
+
+-> this is a command line utility allow to submit a Spark Application / Job to a cluster
+-> run code in any language usig java, python, scala
+-> can be submitted to any supported cluster manager
+  like -> Local, Standalone, YARN, Mesos, Kubernetes
+-> providing configuration and dependencies
+-> Both Spark Shell and Spark- Submit are command line
+    -> Spark Shel is typically used for interactive querying 
+    -> Spark-Submit is typically used to submit long running jobs
+
+
+Multi node Cluster multiple applications:
+
+using Command promp : 
+=====================
+1st ommand prompt
+> spark-class ord.apache.spark.deploy.master.Master --host <LocalHost/PC name>
+
+generated url will be used for application submit -> Master 
+
+open 2nd command prompt
+
+> park-class ord.apache.spark.deploy.worker.Worker <Paste first command prompt generated URL> --host <LocalHost/PC name>
+
+like same above you can use for 2nd worker
+
+
+
+
+
