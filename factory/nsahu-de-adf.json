@@ -1,9 +1,0 @@
-{
-	"name": "nsahu-de-adf",
-	"location": "eastus",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "a9aa6c63-adf9-4133-af82-dbab56bfd2ef",
-		"tenantId": "3ac5654a-5c39-4524-b798-d4cc9aa461f7"
-	}
-}
